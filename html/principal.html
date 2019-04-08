@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="css/style.css">
+     <title>Principal</title>
+     <style>
+
+     body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+     }
+     .header {
+        display: flex;
+        height: 100px;
+        background-color:cadetblue;
+        flex-direction: row;
+        justify-content: space-around;
+     }
+ 
+     .logo {
+     height: 75px;
+     width: 75px;
+     border-radius:10px;
+     }
+     .avatar{
+     height: 40px;
+     width: 40px;
+     border-radius:50px;
+     
+     }
+
+     main {
+     flex: 1 0 auto;
+     background-color:white;
+     width: 300px;
+     }
+     .post {
+        padding: 20px;
+
+      }
+      .post:nth-of-type(odd) {
+        background-color: rgb(221, 223, 218);
+      }
+     
+      .post > p::first-letter {
+        font-size: 30px;
+      }
+     
+     h3 {
+          font-size: 25px;
+     }
+     .favicon {
+          width: 50px;
+     }
+      
+
+     nav {
+     background-color:rgb(245, 226, 118);
+     text-align: center;
+     }
+
+     footer {
+     height: 60px;
+     background-color: rgb(5, 58, 56);
+     }
+
+     .container {
+        flex: 1 0 auto;
+        display: flex;
+     }
+
+     .side {
+        flex: 0 1 auto;
+        min-width: 150px;
+     }
+     .post:target {
+        background-color: whitesmoke;
+        outline: 2px solid;
+      }
+
+     a {
+        color: black;
+      }
+     a:hover {
+        color:white;
+        background-color: rgb(182, 196, 90);
+        border-radius: 4px;
+     }
+     h1{
+        text-align: center;
+        color:teal;
+
+     }
+
+     
+     </style>
+
+
+</head>
+<body>
+     <header class="header">
+          <img class="logo" src="img/profile-180.jpg">
+          <p>WEB MED</p>
+          <a titel="MDP" href="img/profile.html"><img class="avatar" src="img/avatar-br.png"></a>
+
+         
+     </header>
+     
+     <div class="container">
+          <nav class="side">
+               <H2>MENU</H2>
+               <div ><a href="#first-post">Primer post</a></div>  
+               <div ><a href="#second-post">Segundo post</a></div>
+               <div ><a href="#third-post">Tercero post</a></div>
+               <div ><a href="#quarter-post">Cuarto post</a></div>
+               <div ><a href="create.html">Nuevo Post</a></div>
+          </nav>
+          <main>
+               <h1>My blog</h1>
+               <hr/>
+               <article id="first-post" class="post">
+               <h3><img class="favicon" src="img/favicon.ico">Primer Post</h3>
+               <p>Don Quijote</p>
+               <p class="date" >April 8, 2019</p>
+               <p>Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.
+
+               Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe
+               </p>
+               </article>
+               <hr/>
+               <article id="second-post" class="post">
+               <h3><img class="favicon" src="img/favicon.ico">Segundo Post</h3>
+               <p>Penas del joven Werther</p>
+               <p class="date" >April 8, 2019</p>
+               <p>Reina en mi espíritu una alegría admirable, muy parecida a las dulces alboradas de la primavera, de que gozo aquí con delicia.
+
+               Estoy solo, y me felicito de vivir en este país, el más a propósito para almas como la mía, soy tan dichoso, mi querido amigo, me sojuzga de tal modo la idea de reposar, que no me ocupo de mi arte.
+                         
+               Ahora no sabría dibujar, ni siquiera hacer una línea con el lápiz; y, sin embargo, jamás he sido mejor pintor Cuando el valle se vela en torno mío con un encaje de vapores; cuando el sol de
+               </p>
+               </article>
+               <hr/>
+               <article id="third-post" class="post">
+               <h3><img class="favicon" src="img/favicon.ico">Tercero Post</h3>
+               <p>Kafka</p>
+               <p class="date" >April 8, 2019</p>
+               <p>Una mañana, tras un sueño intranquilo, Gregorio Samsa se despertó convertido en un monstruoso insecto.
+
+               Estaba echado de espaldas sobre un duro caparazón y, al alzar la cabeza, vio su vientre convexo y oscuro, surcado por curvadas callosidades, sobre el que casi no se aguantaba la colcha, que estaba a punto de escurrirse hasta el suelo.
+                         
+               Numerosas patas, penosamente delgadas en comparación con el grosor normal de sus piernas, se agitaban sin concierto. - ¿Qué me ha ocurrido? No estaba soñando. Su habitación, una habitación normal, aunque muy pequeña, tenía el aspecto habitual. Sobre la mesa había desparramado un muestrario
+               </p>
+               </article>
+               <hr/>
+               <article id="quarter-post" class="post">
+               <h3><img class="favicon" src="img/favicon.ico">Cuarto Post</h3>
+               <p>Autor: Isa Despa</p>
+               <p class="date" >April 8, 2019</p>
+               <p>Reina en mi espíritu una alegría admirable, muy parecida a las dulces alboradas de la primavera, de que gozo aquí con delicia.
+     
+               Estoy solo, y me felicito de vivir en este país, el más a propósito para almas como la mía, soy tan dichoso, mi querido amigo, me sojuzga de tal modo la idea de reposar, que no me ocupo de mi arte.
+                              
+               Ahora no sabría dibujar, ni siquiera hacer una línea con el lápiz; y, sin embargo, jamás he sido mejor pintor Cuando el valle se vela en torno mío con un encaje de vapores; cuando el sol de
+               </p>
+               </article>
+          </main>
+   
+     </div>
+     <footer >Maria Despa</footer>
+    
+</body>
+</html>
